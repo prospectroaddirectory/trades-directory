@@ -335,7 +335,7 @@
   <div id="results"></div>
 </section>
 
-<footer>Last updated: April 2026 · Recommendations via the Prospect Road WhatsApp group</footer>
+<footer>Last updated: June 2026 · Recommendations via the Prospect Road WhatsApp group</footer>
 
 <script>
 const data = [
@@ -362,6 +362,7 @@ const data = [
   { name: "Jake Wilson", company: "Jake Wilson", trades: ["Painting & Decorating"], phone: "07791 508171", email: "", website: "", instagram: "", facebook: "" },
   { name: "Nick Brackley", company: "Nick Brackley Plastering", trades: ["Plastering"], phone: "07814 409494", email: "Nickbrackley@gmail.com", website: "https://www.facebook.com/KentPlasteringAndArtex", instagram: "", facebook: "https://www.facebook.com/KentPlasteringAndArtex" },
   { name: "Pip Branson", company: "Pip Branson", trades: ["Painting & Decorating"], phone: "07791 508171", email: "", website: "", instagram: "", facebook: "" },
+  { name: "Karl Bowles", company: "KB Hoover Service and Sales", trades: ["Vacuum Cleaner Repairs", "Vacuum Cleaner Sales"], phone: "07547 587457", email: "kbhooverservices@gmail.com", website: "https://www.facebook.com/groups/895056407957344/", instagram: "", facebook: "https://www.facebook.com/groups/895056407957344/", tiktok: "https://www.tiktok.com/@kbhooverserviceandsales" },
 ];
 
 // Build trade dropdown
@@ -417,6 +418,7 @@ function renderResults(list) {
     if (d.website) links.push(`<a class="contact-link" href="${d.website}" target="_blank" rel="noopener"><span class="icon">🌐</span>Website</a>`);
     if (d.instagram) links.push(`<a class="contact-link" href="https://instagram.com/${d.instagram}" target="_blank" rel="noopener"><span class="icon">📷</span>Instagram</a>`);
     if (d.facebook && d.facebook !== d.website) links.push(`<a class="contact-link" href="${d.facebook}" target="_blank" rel="noopener"><span class="icon">👍</span>Facebook</a>`);
+    if (d.tiktok) links.push(`<a class="contact-link" href="${d.tiktok}" target="_blank" rel="noopener"><span class="icon">🎵</span>TikTok</a>`);
 
     return `
       <div class="card" style="animation-delay:${i * 0.04}s">
